@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+body {
+  height:100vh;
+  width:100vw;
+  background:linear-gradient(144deg, white,white 60%, #efefef 60%, #efefef);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #A27BB8;
+  padding: 20px;
+  /* display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2; */
+  
+}
+.navbar h1 {
+  color: #FFFFFF;
+  
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar .link-style{
+  margin-left: 30px;
+  text-decoration: none;
+  padding: 6px;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.navbar .link-style:hover {
+  color: #f1356d;
+}
+
+
+/* #login {
+  color: #f1356d;
+} */
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.home-description-text {
+  font-size: 10px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+/* img {
+  margin-left: px;
+  width: 500px;
+  height: 500px;
+  display: inline-flex;
+
+} */
+
+#content1 {
+  font-weight: 1;
+  font-size: 70px;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+#content2 {
+  font-weight: 1;
+  font-size: 70px;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+#plan-button-text {
+  font-weight: 1;
+  font-size: 30px;
+  border-radius: 20px;
+
+  width: 7em;
+  height: 3em;
+  padding: 20px;
+  margin-left: 7em;
+  margin-top: 1.5em;
+  background: #A27BB8;
+  /* border: 3px solid #000; */
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* #content1::after{
+  content: "\a";
+  white-space: pre;
+} */
+
+#login-circle {
+  font-weight: 1;
+  border-radius: 20px;
+  width: 10px;
+  height: 34px;
+  padding: 10px;
+  background: #FFFFFF;
+  /* border: 3px solid #000; */
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+
+/* Animation */
+/* .animate{
+  padding: 0px 10px 0px 0px;
+  transition: all ease 0.4s;
+} */
+
