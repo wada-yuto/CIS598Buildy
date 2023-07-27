@@ -13,11 +13,11 @@ const workoutSchema = new Schema({
     },
     date: {
         type: Date,
-        required: true
+        required: false
     },
     distance: {
         type: Number,
-        requried: true
+        requried: false
     },
     pace: {
         type: String,
@@ -32,8 +32,8 @@ const workoutSchema = new Schema({
         requried: true
     },
     duration: {
-        type: Number,
-        required: true
+        type: String,
+        required: false
     },
     note: {
         type: String,

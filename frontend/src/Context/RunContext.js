@@ -20,6 +20,10 @@ export const runReducer = (state, action) => {
       return { 
         workouts: state.workouts.map(workout => workout._id === action.payload._id? action.payload : workout) 
       }
+    case 'RECOMMEND_WORKOUT':
+      return {
+        workouts: action.payload 
+      }
     default:
       return state
   }

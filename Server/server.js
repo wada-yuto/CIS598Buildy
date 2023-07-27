@@ -5,10 +5,13 @@ const workoutRouters = require('./routes/workouts');
 const { default: mongoose } = require('mongoose');
 
 
+
 const application = express();
 
 application.use(express.json())
 application.use((req, res, next) => {
+
+   
     console.log(req.path, req.method)
     next()
 })

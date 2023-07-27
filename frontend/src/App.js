@@ -1,4 +1,4 @@
-import Home from './Components/Home'
+import Home from './Pages/Home'
 import NavBar from './Components/Navbar'
 import CalendarPage from './Pages/Calendar'
 import About from './Pages/About'

@@ -109,6 +109,7 @@ export default function AddWorkout() {
             console.log("Error adding workout", json);
         }
         if (response.ok) {
+            console.log(response)
             console.log("Workout added successfully", json.date);
             setTitle("");
             setType("");
@@ -134,7 +135,7 @@ export default function AddWorkout() {
     return (
         <div>
             <Button variant="outlined" onClick={handleClickOpen}>
-                Add Workout
+                Add Run
             </Button>
             <Dialog open={open} onClose={handleClose} fullWidth>
                 <DialogTitle>Add a Workout</DialogTitle>

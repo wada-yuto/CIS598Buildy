@@ -6,7 +6,7 @@ var cardStyle = {
     display: "block",
     width: "15vw",
     transitionDuration: "0.3s",
-    height: "15vw",
+    height: "17vw",
     spacing: 10,
 };
 
@@ -37,7 +37,7 @@ const WorkoutCard = ({ workout }) => {
                         <br />
                         Pace: {workout.pace} per mile
                         <br />
-                        Distance: {workout.ditance} mi
+                        Distance: {workout.distance} mi
                         <br />
                         Duration: {workout.duration} min
                         <br />
@@ -45,7 +45,7 @@ const WorkoutCard = ({ workout }) => {
                         <br />
                         PRE: {workout.pre}
                         <br />
-                        Notes: {workout.notes}
+                        Notes: {workout.note}
                     </Typography>
                 </CardContent>
                 <CardActions>
