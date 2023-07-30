@@ -1,7 +1,7 @@
 const Workout = require("../model/workoutModel");
 const mongoose = require("mongoose");
 const { spawn } = require("child_process");
-const nodecallspython = require("node-calls-python");
+// const nodecallspython = require("node-calls-python");
 
 //All workout
 const getAllWorkouts = async (req, res) => {
@@ -102,7 +102,7 @@ const recommendWorkout = async (req, res) => {
     try {
         var recommendedRuns = [];
         var json;
-        const python = spawn("python", ["main.py", 11]);
+        const python = spawn("python", ["main.py", req.body.param1]);
         var workouts;
         python.stdout.on("data", (data) => {
 

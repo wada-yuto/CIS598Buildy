@@ -7,26 +7,29 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import TextField from "@mui/material/TextField";
 
-
 export default function RecommendWorkout() {
     const [open, setOpen] = React.useState(false);
     const [number, setNumber] = React.useState(0);
 
     const params = {
-        param1: Number(number)
+        param1: Number(number),
     };
 
     const options = {
-        method: 'POST',
-        body: JSON.stringify( params )  
+        method: "POST",
+        body: JSON.stringify(params),
+        headers: {
+            "Content-Type": "application/json",
+        },
     };
 
     const handleSubmit = (e) => {
         console.log(typeof number);
-        fetch('/api/workouts/recommend', options).then(response=>console.log(response));
-    }
+        fetch("/api/workouts/recommend", options).then((response) =>
+            console.log(response)
+        );
+    };
 
-    
     // const handleSubmit = async () => {
 
     //     const response = await fetch("/api/workouts/recommend", {
@@ -75,9 +78,7 @@ export default function RecommendWorkout() {
                     />
                     <DialogActions>
                         <Button onClick={handleClose}>Cancel</Button>
-                        <Button onClick={handleSubmit}>
-                            Add
-                        </Button>
+                        <Button onClick={handleSubmit}>Add</Button>
                     </DialogActions>
                 </DialogContent>
             </Dialog>
